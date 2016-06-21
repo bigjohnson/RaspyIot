@@ -8,11 +8,19 @@ do
 	OUT=$(mosquitto_sub -u ${USER} -P ${PASSWORD} -1 -t "/IoTmanager/${DEVICE}/${CONTROL}/control")
 	STATUS=${?}
 #	echo ${STATUS}
+
 	if [ ${STATUS} -eq "0" ]
 	then
 		mosquitto_pub -u ${USER} -P ${PASSWORD} -t /IoTmanager/${DEVICE}/${CONTROL}/status -m "{\"status\":\"${OUT}\"}"
 		echo ${OUT} > ${DEVICE}.${CONTROL}.txt
-#		echo ${OUT}		
+#		echo ${OUT}
+#		Here you could change status of the port with something like
+#		if [ ${OUT} -eq "0" ]
+#		then
+#			echo "0" > /sys/class/gpio/gpio4/value
+#		else
+#			echo "1" > /sys/class/gpio/gpio4/value
+#		fi
 	else
 #		echo error
 		sleep 10
