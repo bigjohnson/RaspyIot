@@ -1,5 +1,5 @@
 nohup ./fakeboiler.sh &
-nohup ./newfake.sh &
+nohup ./boiler.sh &
 nohup ./boilerless.sh &
 nohup ./boilermore.sh &
 nohup ./dev-fake.sh &
