@@ -1,4 +1,4 @@
-nohup ./status.sh &
+nohup ./fakeboiler.sh &
 nohup ./newfake.sh &
 nohup ./boilerless.sh &
 nohup ./boilermore.sh &
