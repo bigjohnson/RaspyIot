@@ -17,9 +17,9 @@ do
 #		Here you could change status of the port with something like
 #		if [ ${OUT} -eq "0" ]
 #		then
-#			echo "0" > /sys/class/gpio/gpio4/value
+#			echo "0" > /sys/class/gpio/gpio3/value
 #		else
-#			echo "1" > /sys/class/gpio/gpio4/value
+#			echo "1" > /sys/class/gpio/gpio3/value
 #		fi
 	else
 #		echo error
