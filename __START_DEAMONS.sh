@@ -1,0 +1,9 @@
+nohup ./status.sh &
+nohup ./newfake.sh &
+nohup ./boilerless.sh &
+nohup ./boilermore.sh &
+nohup ./dev-fake.sh &
+nohup ./dev-fake.light0.sh &
+nohup ./dev-fake.light1.sh &
+nohup ./dev-fake.light2.sh &
+nohup ./servestatus-mqtt.sh &
