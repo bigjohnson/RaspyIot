@@ -2,8 +2,8 @@
 DEVICE=dev-fake2
 CONTROL=light1
 TARGET=light2
-USER=localhost
-PASSWORD=55bPBs3
+USER=user
+PASSWORD=password
 while true
 do
 	OUT=$(mosquitto_sub -u ${USER} -P ${PASSWORD} -1 -t "/IoTmanager/${DEVICE}/${CONTROL}/control")
