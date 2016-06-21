@@ -1,0 +1,1 @@
+mosquitto_pub -t /IoTmanager/dev-fake2/config -m "{\"id\":7,\"page\":\"boiler\",\"pageId\":4,\"widget\":\"anydata\",\"topic\":\"/IoTmanager/dev-fake2/light7\",\"class1\":\"item rounded text-center no-padding\",\"class2\":\"assertive-bg light\",\"style2\":\"font-size:20px;font-weight:bold\",\"descr\":\"FREEZE ALLERT\"}"
