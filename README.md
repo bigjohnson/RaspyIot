@@ -1,5 +1,5 @@
 # RaspyIot
-Raspberry Pi Iot Manager bash samples with mosquitto, actually thei do nothing but is really easy hange Raspberry GPIO port status.
+Raspberry Pi Iot Manager bash samples with mosquitto mqtt protocol, actually thei do nothing but is really easy hange Raspberry GPIO port status.
 
 Change execute bit with
 
