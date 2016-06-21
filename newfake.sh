@@ -24,8 +24,8 @@ function mqtt {
 
 DEVICE=dev-fake2
 CONTROL=light
-USER=localhost
-PASSWORD=55bPBs3
+USER=user
+PASSWORD=password
 mqtt
 while true
 do
