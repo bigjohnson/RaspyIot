@@ -6,7 +6,7 @@ USER=user
 PASSWORD=password
 while true
 do
-	OUT=$(mosquitto_sub -u ${USER} -P ${PASSWORD} -1 -t "/IoTmanager/${DEVICE}/${CONTROL}/control")
+	OUT=$(mosquitto_sub -u ${USER} -P ${PASSWORD} -C 1 -t "/IoTmanager/${DEVICE}/${CONTROL}/control")
 	STATUS=${?}
 #	echo ${STATUS}
 	if [ ${STATUS} -eq "0" ]
