@@ -20,7 +20,7 @@ PASSWORD=password
 mqtt
 while true
 do
-	IN=$(mosquitto_sub -u ${USER} -P ${PASSWORD} -1 -t /IoTmanager)
+	IN=$(mosquitto_sub -u ${USER} -P ${PASSWORD} -C 1 -t /IoTmanager)
 	STATUS=${?}
 #	echo ${STATUS}
 	if [ ${STATUS} -eq "0" ]
